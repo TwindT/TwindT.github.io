@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>TEST</title>
-    <url>/2025/02/08/TEST/</url>
-    <content><![CDATA[<p>这是一篇测试代码文章</p>
-<div class="code-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">XJT___solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n, s1, s2;</span><br><span class="line">    cin &gt;&gt; n &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;edge1[n + <span class="number">1</span>], edge2[n + <span class="number">1</span>];</span><br><span class="line">    <span class="type">int</span> m1;</span><br><span class="line">    cin &gt;&gt; m1;</span><br><span class="line">    <span class="keyword">while</span> (m1--) &#123;</span><br><span class="line">        <span class="type">int</span> u, v;</span><br><span class="line">        cin &gt;&gt; u &gt;&gt; v;</span><br><span class="line">        edge1[u].<span class="built_in">push_back</span>(v);</span><br><span class="line">        edge1[v].<span class="built_in">push_back</span>(u);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> m2;</span><br><span class="line">    cin &gt;&gt; m2;</span><br><span class="line">    <span class="keyword">while</span> (m2--) &#123;</span><br><span class="line">        <span class="type">int</span> u,v;</span><br><span class="line">        cin &gt;&gt; u &gt;&gt; v;</span><br><span class="line">        edge2[u].<span class="built_in">push_back</span>(v);</span><br><span class="line">        edge2[v].<span class="built_in">push_back</span>(u);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">st</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> u = <span class="number">1</span>;u &lt;= n;u++) &#123;</span><br><span class="line">        <span class="function">set&lt;<span class="type">int</span>&gt; <span class="title">s</span><span class="params">(edge2[u].begin(), edge2[u].end())</span></span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span> v : edge1[u]) &#123;</span><br><span class="line">            <span class="keyword">if</span> (s.<span class="built_in">find</span>(v) != s.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                st[u] = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">dist</span>(n + <span class="number">1</span>, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt; (n + <span class="number">1</span>, INF));</span><br><span class="line">    dist[s1][s2] = <span class="number">0</span>;</span><br><span class="line">    priority_queue&lt;array&lt;<span class="type">int</span>, 3&gt;, vector&lt;array&lt;<span class="type">int</span>, 3&gt;&gt;, greater&lt;array&lt;<span class="type">int</span>, 3&gt;&gt;&gt; q;</span><br><span class="line">    q.<span class="built_in">push</span>(&#123;<span class="number">0</span>, s1, s2&#125;);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> ans = <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">while</span> (q.<span class="built_in">size</span>()) &#123;</span><br><span class="line">        <span class="keyword">auto</span> [d, u1, u2] = q.<span class="built_in">top</span>();</span><br><span class="line">        q.<span class="built_in">pop</span>();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (d != dist[u1][u2]) <span class="keyword">continue</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (u1 == u2 &amp;&amp; st[u1]) &#123;</span><br><span class="line">            ans = d;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span> v1 : edge1[u1]) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">auto</span> v2 : edge2[u2]) &#123;</span><br><span class="line">                <span class="type">int</span> nd = d + <span class="built_in">abs</span>(v1 - v2);</span><br><span class="line">                <span class="keyword">if</span> (nd &lt; dist[v1][v2]) &#123;</span><br><span class="line">                    dist[v1][v2] = nd;</span><br><span class="line">                    q.<span class="built_in">push</span>(&#123;nd, v1, v2&#125;);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2025/02/08/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p>
@@ -29,23 +17,5 @@
 
 <p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>测试文章</title>
-    <url>/2025/02/08/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p>这是一篇测试文章</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/img/TEST.jpeg"
-                      alt="Test"
-                ></p>
-]]></content>
-      <categories>
-        <category>JAVA</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
   </entry>
 </search>
