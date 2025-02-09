@@ -7,18 +7,12 @@
 <p>樱子和浩介决定在坐标线上玩一些游戏。当前点的位置在 x&#x3D;0。他们将轮流进行，而 樱子将是第一个开始的人。</p>
 <p>在第 i 次移动中，当前玩家将把点移动 2⋅i−1 个单位。樱子总是将点向负方向移动，而浩介总是向正方向移动。</p>
 <p>换句话说，以下情况将发生：</p>
-
-  <div class="note-large default">
-    <div class="notel-title rounded-t-lg p-3 font-bold text-lg flex flex-row gap-2 items-center">
-      <i class="notel-icon fa-solid fa-info"></i><p>icon-padding</p>
-
-    </div>
-    <div class="notel-content">
-      <p>1.樱子将把点的位置改变 −1,现在是 x&#x3D;−1<br>2.浩介将把点的位置改变 3,现在是 x&#x3D;2<br>3.樱子将把点的位置改变 −5,现在是 x&#x3D;−3<br>⋯⋯</p>
-
-    </div>
-  </div>
-
+<ul>
+<li>1.樱子将把点的位置改变 −1,现在是 x&#x3D;−1</li>
+<li>2.浩介将把点的位置改变 3,现在是 x&#x3D;2</li>
+<li>3.樱子将把点的位置改变 −5,现在是 x&#x3D;−3</li>
+<li>⋯⋯</li>
+</ul>
 <p>他们将继续游戏，直到点的坐标的绝对值不超过 n。更正式地说，游戏在 −n≤x≤n 时继续。可以证明游戏总会结束。</p>
 <p>你的任务是确定谁将是最后一个出手的人。</p>
 <p>输入</p>
