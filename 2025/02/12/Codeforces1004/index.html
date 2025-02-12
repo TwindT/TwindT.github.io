@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="TwindT">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://twindt.github.io/2025/02/12/codeforces1004/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+    
+    
+        
+        <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Codeforces1004(Div2 A-E)">
+<meta property="og:url" content="https://twindt.github.io/2025/02/12/Codeforces1004/index.html">
+<meta property="og:site_name" content="一位热爱计算机的小白">
+<meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://twindt.github.io/images/redefine-og.webp">
+<meta property="article:published_time" content="2025-02-12T07:24:36.000Z">
+<meta property="article:modified_time" content="2025-02-12T08:59:25.396Z">
+<meta property="article:author" content="TwindT">
+<meta property="article:tag" content="算法">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://twindt.github.io/images/redefine-og.webp">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/redefine-favicon.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-favicon.svg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/redefine-favicon.svg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            Codeforces1004(Div2 A-E) | TwindT
+        
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/build/tailwind.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+    
+    
+        <link href="" rel="stylesheet">
+    
+    
+    
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"twindt.github.io","root":"/","language":"zh-CN","path":"search.xml"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"delete_mask":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":["Ranking++"]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":false,"default":"cc_by_nc_sa"},"lazyload":true,"pangu_js":false,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":true,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":{"enable":true,"image":"/images/redefine-og.webp","description":"Hexo Theme Redefine, Redefine Your Hexo Journey."},"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Welcome to TwindT blog","subtitle":{"text":["关山南越"],"hitokoto":{"enable":true,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":"2806119959@qq.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":"ONE","artist":"宋雨琦","url":"https://y.qq.com/n/ryqq/player","cover":"https://y.qq.com/music/photo_new/T002R300x300M0000015lWxJ4JisZ5_1.jpg?max_age=2592000","lrc":null}]},"mermaid":{"enable":false,"version":"11.4.1"}},"version":"2.8.2","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":"一名热爱计算机的小白","show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2025/2/8 19:00"};
+    window.lang_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+<body>
+	<div class="progress-bar-container">
+	
+
+	
+	<span class="pjax-progress-bar"></span>
+	<!--        <span class="swup-progress-icon">-->
+	<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+	<!--        </span>-->
+	
+</div>
+
+<main class="page-container" id="swup">
+
+	
+
+	<div class="main-content-container flex flex-col justify-between min-h-dvh">
+		<div class="main-content-header">
+			<header class="navbar-container px-6 md:px-12">
+    <div class="navbar-content transition-navbar ">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                TwindT
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    首页
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                首页
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">4</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+		</div>
+
+		<div class="main-content-body transition-fade-up">
+			
+
+			<div class="main-content">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
+
+		<div class="article-title relative w-full">
+			
+			<div class="w-full flex items-center pt-6 justify-start">
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Codeforces1004(Div2 A-E)</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/avator.jpg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">TwindT</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Ranking++</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2025-02-12 15:24:36</span>
+        <span class="mobile">2025-02-12 15:24:36</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2025-02-12 16:59:25</span>
+            <span class="mobile">2025-02-12 16:59:25</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Codeforces/">Codeforces</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E7%AE%97%E6%B3%95/">算法</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<p>感觉这场整体都很神秘, 很符合cf特色</p>
+<h3 id="A-Adjacent-Digit-Sums"><a href="#A-Adjacent-Digit-Sums" class="headerlink" title="A. Adjacent Digit Sums"></a>A. Adjacent Digit Sums</h3><p>题目链接:<a class="link"   target="_blank" rel="noopener" href="https://codeforces.com/contest/2067/problem/A" >https://codeforces.com/contest/2067/problem/A<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>首先我们想到, 对一个数加 1 在不考虑进位时体现在数位和上其实也是加 1, 所以如果 y &#x3D;&#x3D; x + 1 此时一定满足;</p>
+<p>对于 y !&#x3D; x + 1 时, n至少个位是 9 , 这样加1出现进位才能使得数位和差大于 1;</p>
+<p>这样 x 就会比 y 大 i * 9 - 1 (i为未知数) 我们只用枚举 i 即可.</p>
+<div class="code-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> x, y;</span><br><span class="line">    cin &gt;&gt; x &gt;&gt; y;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (y == x + <span class="number">1</span>) &#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Yes\n&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>;i &lt;= x / <span class="number">9</span>;i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (y == x - <span class="number">9</span> * i + <span class="number">1</span>) &#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;Yes\n&quot;</span>;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;No\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="B-Two-Large-Bags"><a href="#B-Two-Large-Bags" class="headerlink" title="B. Two Large Bags"></a>B. Two Large Bags</h3><p>题目链接:<a class="link"   target="_blank" rel="noopener" href="https://codeforces.com/contest/2067/problem/B" >https://codeforces.com/contest/2067/problem/B<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>通过题目我们可以知道, 对于大数无法平分给两个数组的情况, 我们可以利用小数加 1 这个条件来解决;</p>
+<p>对于个数只有 0 或者 2 的元素我们无法再拆分, 而对于大于 2 的元素, 因为要满足加 1 这个条件我们必须剩两个平分两个数组,</p>
+<p>所以我们贪心, 将剩下的全部加到后一个元素上, 最终如果剩下的数量为偶数则满足条件.</p>
+<div class="code-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">v</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">    map&lt;<span class="type">int</span>, <span class="type">int</span>&gt; mp;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++) &#123;</span><br><span class="line">        cin &gt;&gt; v[i];</span><br><span class="line">        mp[v[i]]++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (mp[i] == <span class="number">0</span> || mp[i] == <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (mp[i] == <span class="number">1</span>) &#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;No\n&quot;</span>;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            mp[i + <span class="number">1</span>] += mp[i] - <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (mp[n + <span class="number">1</span>] % <span class="number">2</span>) cout &lt;&lt; <span class="string">&quot;No\n&quot;</span>;</span><br><span class="line">    <span class="keyword">else</span> cout &lt;&lt; <span class="string">&quot;Yes\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="C-Devyatkino"><a href="#C-Devyatkino" class="headerlink" title="C. Devyatkino"></a>C. Devyatkino</h3><p>题目链接:<a class="link"   target="_blank" rel="noopener" href="https://codeforces.com/contest/2067/problem/C" >https://codeforces.com/contest/2067/problem/C<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>根据题目我们知道, 我们每次操作就是加上 9, 99, 999 … 其中一个;</p>
+<p>仔细观察后我们能发现, 不管加上上述提到的那个数, 结果的个位都会-1, 因此我们就能在很有限的操作次数下得到结果;</p>
+<p>考虑到可能出现进位或者其他数位与 9 相加得到 7 的情况, 我们只要暴力枚举 9, 99, 999 … 即可.</p>
+<p>而由于 n 最大为1e9, 所以我们把枚举上限设置到小于1e9.</p>
+<div class="code-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 判断是否存在数位为7</span></span><br><span class="line">    <span class="keyword">auto</span> check7 = [&amp;] (ll x) -&gt; <span class="type">bool</span> &#123;</span><br><span class="line">        <span class="keyword">while</span> (x) &#123;</span><br><span class="line">            <span class="type">int</span> mid = x % <span class="number">10</span>;</span><br><span class="line">            x /= <span class="number">10</span>;</span><br><span class="line">            <span class="keyword">if</span> (mid == <span class="number">7</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    ll x = <span class="number">9</span>;</span><br><span class="line">    ll ans = <span class="number">1e9</span>;</span><br><span class="line">    <span class="keyword">while</span> (x &lt; <span class="number">1e9</span>) &#123;</span><br><span class="line">        ll num = n;</span><br><span class="line">        <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">check7</span>(num)) &#123;</span><br><span class="line">                ans = <span class="built_in">min</span>(ans, (num - n) / x);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            num += x;</span><br><span class="line">        &#125;</span><br><span class="line">        x = x * <span class="number">10</span> + <span class="number">9</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="D-Object-Identification"><a href="#D-Object-Identification" class="headerlink" title="D. Object Identification"></a>D. Object Identification</h3><p>题目链接:<a class="link"   target="_blank" rel="noopener" href="https://codeforces.com/contest/2067/problem/D" >https://codeforces.com/contest/2067/problem/D<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>根据题目我们能得到一些关键信息:</p>
+<ul>
+<li>对于对象 A 如果没有路径则会返回 0 , 而因为题目限制对象 B 是不会返回 0 的, 我们可以以此区分 A, B;</li>
+<li>数组 x[i] 的范围是 1-n ,那么数组x可以分为两种情况:一种是 1-n 全部出现, 另一种没有全部出现;</li>
+</ul>
+<p>首先对于全部出现的情况, 我们可以选择相差最大的两个x(只能是 1 和 n), 进行两次询问, 正着一次, 反着一次,</p>
+<p>如果是 A 对象, 那么在路径最长的情况下两次询问结果中只可能有一次为 n - 1, 不可能两次都是 n - 1;</p>
+<p>对于另一种情况, 那么未出现的数出度为0, 因此我们询问该点和另一个出现过的点, 结果一定为 0.</p>
+<div class="code-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    map&lt;<span class="type">int</span>, <span class="type">int</span>&gt; mp;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++) &#123;</span><br><span class="line">        <span class="type">int</span> x;</span><br><span class="line">        cin &gt;&gt; x;</span><br><span class="line">        mp[x] = i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> query = [&amp;] (<span class="type">int</span> x, <span class="type">int</span> y) -&gt; <span class="type">int</span> &#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;?&quot;</span> &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; x &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; y &lt;&lt; endl;</span><br><span class="line">        <span class="type">int</span> ans;</span><br><span class="line">        cin &gt;&gt; ans;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (mp.<span class="built_in">size</span>() == n) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">query</span>(mp[<span class="number">1</span>], mp[n]) &gt;= n - <span class="number">1</span> &amp;&amp; <span class="built_in">query</span>(mp[n], mp[<span class="number">1</span>]) &gt;= n - <span class="number">1</span>) cout &lt;&lt; <span class="string">&quot;! B&quot;</span> &lt;&lt; endl;</span><br><span class="line">        <span class="keyword">else</span> cout &lt;&lt; <span class="string">&quot;! A&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="type">int</span> x,y;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++)  &#123;</span><br><span class="line">            <span class="keyword">if</span> (mp[i]) x = i;</span><br><span class="line">            <span class="keyword">else</span> y = i;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">query</span>(y, x)) cout &lt;&lt; <span class="string">&quot;! B&quot;</span> &lt;&lt; endl;</span><br><span class="line">        <span class="keyword">else</span> cout &lt;&lt; <span class="string">&quot;! A&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="E-White-Magic"><a href="#E-White-Magic" class="headerlink" title="E. White Magic"></a>E. White Magic</h3><p>题目链接:<a class="link"   target="_blank" rel="noopener" href="https://codeforces.com/contest/2067/problem/E" >https://codeforces.com/contest/2067/problem/E<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>观察到如果序列中不存在 0 那么答案显然为 n;</p>
+<p>假设出现了 0 那么一定是保留最左边的 0 将剩余的 0 全部删除最优, 这样保证了 0 右边的是全部满足题设条件的;</p>
+<p>此时我们只用判读左边是否满足题设条件, 如果不满足我们就将剩下的一个 0 删除即可;</p>
+<p>我们可以预处理出来每个位置的 mex, 然后在维护最小值的同时判断即可.</p>
+<div class="code-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">XJT___solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++) cin &gt;&gt; a[i];</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> flag = <span class="number">0</span>;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt; v;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (a[i] == <span class="number">0</span> &amp;&amp; flag) <span class="keyword">continue</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (a[i] == <span class="number">0</span>) flag = <span class="number">1</span>;</span><br><span class="line">        v.<span class="built_in">push_back</span>(a[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!flag) &#123;</span><br><span class="line">        cout &lt;&lt; n &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 预处理mex</span></span><br><span class="line">    <span class="type">int</span> len = v.<span class="built_in">size</span>();</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">st</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">getmex</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = len - <span class="number">1</span>;i &gt; <span class="number">0</span>;i--) &#123;</span><br><span class="line">        <span class="keyword">if</span> (v[i] &lt; n) st[v[i]] = <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> mex = getmex[i + <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">while</span> (mex &lt; n &amp;&amp; st[mex]) mex++;</span><br><span class="line"></span><br><span class="line">        getmex[i] = mex;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> mi = INF;</span><br><span class="line">    flag = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>;i &lt; len;i++) &#123;</span><br><span class="line">        mi = <span class="built_in">min</span>(mi, v[i]);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (mi &lt; getmex[i + <span class="number">1</span>]) &#123;</span><br><span class="line">            flag = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; v.<span class="built_in">size</span>() - <span class="number">1</span> + flag &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+
+
+		</div>
+
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/%E7%AE%97%E6%B3%95/">#算法</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2025/02/10/Codeforces1003/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">Codeforces1003(Div4 A-F)</span>
+						<span class="post-nav-item">下一篇</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">目录</div>
+		<div class="page-title">Codeforces1004(Div2 A-E)</div>
+		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-Adjacent-Digit-Sums"><span class="nav-text">A. Adjacent Digit Sums</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B-Two-Large-Bags"><span class="nav-text">B. Two Large Bags</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-Devyatkino"><span class="nav-text">C. Devyatkino</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#D-Object-Identification"><span class="nav-text">D. Object Identification</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#E-White-Magic"><span class="nav-text">E. White Magic</span></a></li></ol>
+
+	</div>
+</div>
+	</div>
+	
+</div>
+			</div>
+
+			
+		</div>
+
+		<div class="main-content-footer">
+			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2025</span>
+              -
+            
+            2025&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">TwindT</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        共撰写了 4 篇文章
+                    </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">访问人数</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">总访问量</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a> 驱动</span>
+            <span class="text-sm lg:block">主题&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.8.2</a></span>
+        </div>
+        
+        
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+		</div>
+	</div>
+
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+	</ul>
+</div>
+	</div>
+	
+
+	<div class="right-side-tools-container">
+		<div class="side-tools-container">
+	<ul class="hidden-tools-list">
+		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-plus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-minus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+			<i class="fa-regular fa-moon"></i>
+		</li>
+
+		<!-- rss -->
+		
+
+		
+
+		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+			<i class="fa-regular fa-arrow-down"></i>
+		</li>
+	</ul>
+
+	<ul class="visible-tools-list">
+		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+			<i class="fa-regular fa-cog fa-spin"></i>
+		</li>
+		
+		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+			<i class="arrow-up fas fa-arrow-up"></i>
+			<span class="percent"></span>
+		</li>
+		
+		
+	</ul>
+</div>
+	</div>
+
+	<div class="image-viewer-container">
+	<img src="">
+</div>
+
+	
+	<div class="search-pop-overlay">
+	<div class="popup search-popup">
+		<div class="search-header">
+			<span class="search-input-field-pre">
+				<i class="fa-solid fa-keyboard"></i>
+			</span>
+			<div class="search-input-container">
+				<input autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="站内搜索您需要的内容..." spellcheck="false" type="search" class="search-input">
+			</div>
+			<span class="popup-btn-close">
+				<i class="fa-solid fa-times"></i>
+			</span>
+		</div>
+		<div id="search-result">
+			<div id="no-result">
+				<i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+</main>
+
+
+
+<script src="/js/build/libs/Swup.min.js"></script>
+
+<script src="/js/build/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/build/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+	
+<script src="/js/build/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/build/utils.js" type="module"></script>
+
+<script src="/js/build/main.js" type="module"></script>
+
+<script src="/js/build/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/build/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/build/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/build/layouts/categoryList.js" type="module"></script>
+
+
+
+    
+<script src="/js/build/tools/localSearch.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/build/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/build/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/build/tools/runtime.js"></script>
+
+    
+<script src="/js/build/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/build/libs/Typed.min.js"></script>
+
+  
+<script src="/js/build/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+    
+<script src="/js/build/libs/anime.min.js"></script>
+
+
+
+
+
+    
+<script src="/js/build/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/build/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/js/build/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+
+	
+</body>
+
+</html>
